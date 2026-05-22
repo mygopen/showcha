@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com' rel='preconnect'/>
     <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
     <link href='https://fonts.googleapis.com/css2?family=Anton&amp;display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap' rel='stylesheet'/>
     <link href='https://ik.imagekit.io' rel='preconnect'/>
     <link as='image' href='https://ik.imagekit.io/mygopen/showcha/main-bg.jpg' rel='preload'/>
 
@@ -3031,6 +3032,391 @@ body.illustration-portfolio-view .post-title{
 padding-bottom:82px
 }
 }
+body.showcha-unrovr-portfolio-view{
+background:#f7f1ec;
+color:#333;
+font-family:Poppins,"LINE Seed TW",Roboto,Arial,sans-serif
+}
+body.showcha-unrovr-portfolio-view .bg-photo-container,
+body.showcha-unrovr-portfolio-view .bg-photo-overlay,
+body.showcha-unrovr-portfolio-view .centered-top-container,
+body.showcha-unrovr-portfolio-view .centered-top-placeholder,
+body.showcha-unrovr-portfolio-view .sidebar-container,
+body.showcha-unrovr-portfolio-view .post-filter-message,
+body.showcha-unrovr-portfolio-view .main-heading,
+body.showcha-unrovr-portfolio-view .post-share-buttons,
+body.showcha-unrovr-portfolio-view .post-header,
+body.showcha-unrovr-portfolio-view .post-footer,
+body.showcha-unrovr-portfolio-view .post-bottom,
+body.showcha-unrovr-portfolio-view .FeaturedPost,
+body.showcha-unrovr-portfolio-view .PopularPosts,
+body.showcha-unrovr-portfolio-view .inline-ad,
+body.showcha-unrovr-portfolio-view .desktop-ad,
+body.showcha-unrovr-portfolio-view .mobile-ad,
+body.showcha-unrovr-portfolio-view #footer{
+display:none
+}
+body.showcha-unrovr-portfolio-view .page{
+background:linear-gradient(135deg,#f9f4ef 0%,#fff 48%,#f6edf2 100%);
+min-height:100vh;
+min-height:100svh
+}
+body.showcha-unrovr-portfolio-view .page_body{
+margin-left:0
+}
+body.showcha-unrovr-portfolio-view .page_body .centered{
+max-width:none;
+min-height:100vh;
+min-height:100svh;
+padding:0
+}
+body.showcha-unrovr-portfolio-view .centered-bottom{
+box-sizing:border-box;
+display:grid;
+gap:clamp(34px,5vw,70px);
+grid-template-columns:minmax(240px,320px) minmax(0,1fr);
+margin:0 auto;
+max-width:1180px;
+padding:clamp(34px,5vw,72px) clamp(18px,5vw,70px) clamp(52px,7vw,92px);
+width:100%
+}
+.showcha-unrovr-profile{
+align-self:start;
+animation:showchaUnrovrRise .72s cubic-bezier(.2,.72,.24,1) both;
+background:#fff;
+border:1px solid rgba(36,28,24,.08);
+box-shadow:0 24px 64px rgba(44,28,22,.12);
+grid-column:1;
+grid-row:1 / span 2;
+overflow:hidden;
+position:sticky;
+top:clamp(22px,4vw,46px)
+}
+.showcha-unrovr-cover{
+aspect-ratio:4/3;
+background-image:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.08)),url(https://ik.imagekit.io/mygopen/showcha/main-bg.jpg);
+background-position:center;
+background-size:cover
+}
+.showcha-unrovr-card-info{
+background:#ff7eb6;
+color:#fff;
+padding:24px 24px 22px
+}
+.showcha-unrovr-name{
+color:#fff;
+display:block;
+font-family:"Abril Fatface","LINE Seed TW",serif;
+font-size:34px;
+font-weight:400;
+letter-spacing:0;
+line-height:1;
+text-decoration:none
+}
+.showcha-unrovr-card-info p{
+color:rgba(255,255,255,.86);
+font-size:13px;
+line-height:1.7;
+margin:10px 0 0
+}
+.showcha-unrovr-card-nav{
+display:grid;
+gap:0;
+padding:10px 0
+}
+.showcha-unrovr-card-nav a{
+align-items:center;
+border-top:1px solid rgba(36,28,24,.08);
+color:#333;
+display:flex;
+font-size:14px;
+font-weight:600;
+min-height:48px;
+padding:0 24px;
+text-decoration:none;
+transition:background .2s ease,color .2s ease,padding-left .22s cubic-bezier(.2,.72,.24,1)
+}
+.showcha-unrovr-card-nav a:first-child{
+border-top:0
+}
+.showcha-unrovr-card-nav a:hover,
+.showcha-unrovr-card-nav a:focus{
+background:#fff6df;
+color:#ff7eb6;
+outline:0;
+padding-left:32px
+}
+.showcha-unrovr-social{
+align-items:center;
+border-top:1px solid rgba(36,28,24,.08);
+display:grid;
+grid-template-columns:repeat(4,1fr)
+}
+.showcha-unrovr-social a{
+align-items:center;
+border-left:1px solid rgba(36,28,24,.08);
+color:#333;
+display:flex;
+height:52px;
+justify-content:center;
+text-decoration:none;
+transition:background .2s ease,color .2s ease
+}
+.showcha-unrovr-social a:first-child{
+border-left:0
+}
+.showcha-unrovr-social a:hover,
+.showcha-unrovr-social a:focus{
+background:#ffabcf;
+color:#fff;
+outline:0
+}
+.showcha-unrovr-social svg{
+display:block;
+height:18px;
+width:18px
+}
+.showcha-unrovr-head{
+align-self:end;
+animation:showchaUnrovrRise .72s .08s cubic-bezier(.2,.72,.24,1) both;
+grid-column:2;
+grid-row:1
+}
+.showcha-unrovr-head h1{
+color:#333;
+font-family:"Abril Fatface","LINE Seed TW",serif;
+font-size:clamp(54px,8vw,92px);
+font-weight:400;
+letter-spacing:0;
+line-height:1;
+margin:0 0 28px;
+text-transform:lowercase
+}
+.showcha-unrovr-filters{
+display:flex;
+flex-wrap:wrap;
+gap:12px 22px;
+list-style:none;
+margin:0;
+padding:0
+}
+.showcha-unrovr-filters a{
+color:#56504d;
+display:inline-block;
+font-size:14px;
+font-weight:600;
+line-height:1.35;
+position:relative;
+text-decoration:none;
+text-transform:lowercase
+}
+.showcha-unrovr-filters li:first-child a,
+.showcha-unrovr-filters a:hover,
+.showcha-unrovr-filters a:focus{
+box-shadow:inset 0 -7px 0 #feeac5;
+color:#222;
+outline:0
+}
+body.showcha-unrovr-portfolio-view #page_body{
+grid-column:2;
+grid-row:2;
+min-width:0
+}
+body.showcha-unrovr-portfolio-view .Blog{
+margin:0
+}
+body.showcha-unrovr-portfolio-view .blog-posts{
+column-gap:30px;
+columns:2 270px;
+display:block;
+margin:0;
+padding:0
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container{
+animation:showchaUnrovrRise .72s cubic-bezier(.2,.72,.24,1) both;
+background:#fff;
+border:1px solid rgba(36,28,24,.08);
+box-shadow:0 16px 40px rgba(44,28,22,.09);
+box-sizing:border-box;
+break-inside:avoid;
+display:inline-block;
+margin:0 0 32px;
+overflow:hidden;
+padding:0;
+transition:box-shadow .22s ease,transform .24s cubic-bezier(.2,.72,.24,1);
+width:100%
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:nth-of-type(2n){
+animation-delay:.08s
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:nth-of-type(3n){
+animation-delay:.14s
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:hover,
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:focus-within{
+box-shadow:0 22px 56px rgba(44,28,22,.16);
+transform:translateY(-6px)
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer{
+padding:0
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post{
+display:flex;
+flex-direction:column;
+min-height:0
+}
+body.showcha-unrovr-portfolio-view .post-body{
+display:contents
+}
+body.showcha-unrovr-portfolio-view .post-body .snippet-thumbnail{
+aspect-ratio:4/3;
+float:none;
+margin:0;
+max-height:none;
+max-width:none;
+order:1;
+overflow:hidden;
+position:relative;
+width:100%
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:nth-of-type(2n) .snippet-thumbnail{
+aspect-ratio:1/1
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:nth-of-type(3n) .snippet-thumbnail{
+aspect-ratio:5/4
+}
+body.showcha-unrovr-portfolio-view .post-body .snippet-thumbnail::after{
+background:#ffabcf;
+content:"";
+inset:0;
+opacity:0;
+pointer-events:none;
+position:absolute;
+transition:opacity .22s ease;
+z-index:2
+}
+body.showcha-unrovr-portfolio-view .post-body .snippet-thumbnail img{
+display:block;
+filter:saturate(.98) contrast(1.01);
+height:100%;
+max-height:none;
+max-width:none;
+object-fit:cover;
+transform:scale(1.01);
+transition:filter .22s ease,transform .44s cubic-bezier(.2,.72,.24,1);
+width:100%
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:hover .snippet-thumbnail::after,
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:focus-within .snippet-thumbnail::after{
+opacity:.48
+}
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:hover .snippet-thumbnail img,
+body.showcha-unrovr-portfolio-view .blog-posts .post-outer-container:focus-within .snippet-thumbnail img{
+filter:saturate(1.08) contrast(1.05);
+transform:scale(1.08)
+}
+body.showcha-unrovr-portfolio-view .showcha-unrovr-thumb-link{
+display:block;
+height:100%;
+position:relative;
+z-index:1
+}
+body.showcha-unrovr-portfolio-view .post-title{
+color:#333;
+float:none;
+font-family:Poppins,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:20px;
+font-weight:600;
+letter-spacing:0;
+line-height:1.35;
+margin:20px 22px 0;
+max-width:none;
+order:2
+}
+body.showcha-unrovr-portfolio-view .post-title a,
+body.showcha-unrovr-portfolio-view .post-title a:hover,
+body.showcha-unrovr-portfolio-view .post-title a:visited{
+color:inherit;
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+letter-spacing:0;
+line-height:inherit;
+text-decoration:none;
+transition:color .2s ease
+}
+body.showcha-unrovr-portfolio-view .post-title a:hover,
+body.showcha-unrovr-portfolio-view .post-title a:focus{
+color:#ff7eb6;
+outline:0
+}
+body.showcha-unrovr-portfolio-view .post-snippet{
+color:#8c807b;
+font-size:13px;
+line-height:1.65;
+margin:8px 22px 22px;
+max-height:3.4em;
+order:3;
+overflow:hidden
+}
+body.showcha-unrovr-portfolio-view .snippet-fade{
+display:none
+}
+body.showcha-unrovr-portfolio-view .blog-pager{
+break-inside:avoid;
+margin:4px 0 0;
+padding:0 0 10px
+}
+body.showcha-unrovr-portfolio-view .blog-pager a{
+border:1px solid #ffabcf;
+color:#ff7eb6;
+display:inline-flex;
+font-weight:600;
+min-height:44px;
+padding:0 18px;
+text-decoration:none
+}
+@keyframes showchaUnrovrRise{
+0%{
+opacity:0;
+transform:translateY(24px)
+}
+100%{
+opacity:1;
+transform:translateY(0)
+}
+}
+@media screen and (max-width:900px){
+body.showcha-unrovr-portfolio-view .centered-bottom{
+grid-template-columns:1fr
+}
+.showcha-unrovr-profile,
+.showcha-unrovr-head,
+body.showcha-unrovr-portfolio-view #page_body{
+grid-column:1;
+grid-row:auto
+}
+.showcha-unrovr-profile{
+position:relative;
+top:auto
+}
+}
+@media screen and (max-width:560px){
+body.showcha-unrovr-portfolio-view .centered-bottom{
+gap:28px;
+padding:24px 16px 48px
+}
+.showcha-unrovr-head h1{
+font-size:clamp(48px,16vw,68px);
+margin-bottom:22px
+}
+.showcha-unrovr-filters{
+gap:10px 18px
+}
+body.showcha-unrovr-portfolio-view .blog-posts{
+columns:1
+}
+}
 body.showcha-project-view{
 background:#050505;
 color:#fff;
@@ -3765,7 +4151,13 @@ transition:none
                 <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;'>
                   <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [480, 720, 960, 1200],                                       imageRatio: &quot;4:5&quot;,                                       sourceSizes: &quot;(min-width: 1180px) 30vw, (min-width: 760px) 44vw, 92vw&quot;                                    }' name='responsiveImage'/>
                 <b:else/>
-                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [32, 64, 128, 256],                                       imageRatio: &quot;1:1&quot;,                                       sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                    }' name='responsiveImage'/>
+                  <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;portfolio&quot;'>
+                    <a class='showcha-unrovr-thumb-link' expr:href='data:post.url'>
+                      <b:include data='{                                         image: data:post.featuredImage,                                         imageSizes: [420, 640, 820, 1040],                                         imageRatio: &quot;4:3&quot;,                                         sourceSizes: &quot;(min-width: 1000px) 36vw, (min-width: 680px) 48vw, 92vw&quot;                                      }' name='responsiveImage'/>
+                    </a>
+                  <b:else/>
+                    <b:include data='{                                         image: data:post.featuredImage,                                         imageSizes: [32, 64, 128, 256],                                         imageRatio: &quot;1:1&quot;,                                         sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                      }' name='responsiveImage'/>
+                  </b:if>
                 </b:if>
               </div>
             </b:if>
@@ -3941,6 +4333,7 @@ transition:none
     <b:class cond='data:view.isArchive' name='archive-view'/>
     <b:class cond='data:view.isLabelSearch' name='label-view'/>
     <b:class cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;' name='illustration-portfolio-view'/>
+    <b:class cond='data:view.isLabelSearch and data:view.search.label == &quot;portfolio&quot;' name='showcha-unrovr-portfolio-view'/>
     <b:class cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;' name='showcha-project-view'/>
     <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
     <b:class name='version-1-3-3'/>
@@ -4210,6 +4603,49 @@ transition:none
                       <h1 id='showcha-portfolio-title'>Illustration</h1>
                     </div>
                     <p class='showcha-portfolio-summary'>創作、圖像與生活觀察的作品收藏。每張圖都是一個入口，往裡走就是完整的故事。</p>
+                  </section>
+                </b:if>
+                <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;portfolio&quot;'>
+                  <section aria-label='Portfolio profile' class='showcha-unrovr-profile'>
+                    <div aria-hidden='true' class='showcha-unrovr-cover'/>
+                    <div class='showcha-unrovr-card-info'>
+                      <a class='showcha-unrovr-name' expr:href='data:blog.homepageUrl'>SHOWCHA</a>
+                      <p>創業 / 創意 / 創傷</p>
+                    </div>
+                    <nav aria-label='Portfolio navigation' class='showcha-unrovr-card-nav'>
+                      <a expr:href='data:blog.homepageUrl'>Home</a>
+                      <a expr:href='data:blog.searchUrl'>Search</a>
+                    </nav>
+                    <div aria-label='Social links' class='showcha-unrovr-social' role='navigation'>
+                      <a aria-label='Facebook' href='#'>
+                        <svg aria-hidden='true' focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                          <path d='M14.2 8.1h2.3V4.4c-.4-.1-1.8-.2-3.4-.2-3.4 0-5.7 2.1-5.7 6v3.4H3.6v4.1h3.8v10h4.6v-10h3.6l.6-4.1H12v-3c0-1.2.3-2 2.2-2z' fill='currentColor'/>
+                        </svg>
+                      </a>
+                      <a aria-label='Instagram' href='#'>
+                        <svg aria-hidden='true' focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                          <path d='M7.7 2.8h8.6c2.7 0 4.9 2.2 4.9 4.9v8.6c0 2.7-2.2 4.9-4.9 4.9H7.7c-2.7 0-4.9-2.2-4.9-4.9V7.7c0-2.7 2.2-4.9 4.9-4.9zm0 1.8c-1.7 0-3.1 1.4-3.1 3.1v8.6c0 1.7 1.4 3.1 3.1 3.1h8.6c1.7 0 3.1-1.4 3.1-3.1V7.7c0-1.7-1.4-3.1-3.1-3.1zm4.3 3.1a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6zm0 1.8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm4.6-2.1a1 1 0 1 1 0 2.1 1 1 0 0 1 0-2.1z' fill='currentColor'/>
+                        </svg>
+                      </a>
+                      <a aria-label='YouTube' href='#'>
+                        <svg aria-hidden='true' focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                          <path d='M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.8 4 12 4 12 4s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.8v1.7c0 1.8.2 3.6.2 3.6s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 6.5.2 6.5.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.6v-1.7c0-1.8-.2-3.6-.2-3.6zM10.2 14.7V8.5l5.8 3.1z' fill='currentColor'/>
+                        </svg>
+                      </a>
+                      <a aria-label='Gmail' href='#'>
+                        <svg aria-hidden='true' focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                          <path d='M3.6 5.2h16.8c1 0 1.8.8 1.8 1.8v10c0 1-.8 1.8-1.8 1.8H3.6c-1 0-1.8-.8-1.8-1.8V7c0-1 .8-1.8 1.8-1.8zm.4 2.1v9.4h16V7.3l-8 5.7zm1.1-.3 6.9 4.9L18.9 7z' fill='currentColor'/>
+                        </svg>
+                      </a>
+                    </div>
+                  </section>
+                  <section aria-labelledby='showcha-unrovr-title' class='showcha-unrovr-head'>
+                    <h1 id='showcha-unrovr-title'>portfolio</h1>
+                    <ul class='showcha-unrovr-filters'>
+                      <li><a expr:href='data:blog.homepageUrl + &quot;search/label/portfolio&quot;'>all</a></li>
+                      <li><a expr:href='data:blog.homepageUrl + &quot;search/label/Illustration&quot;'>illustration</a></li>
+                      <li><a expr:href='data:blog.homepageUrl + &quot;search/label/video&quot;'>video</a></li>
+                    </ul>
                   </section>
                 </b:if>
                 <b:if cond='data:view.isMultipleItems'>
@@ -4616,7 +5052,13 @@ transition:none
                 <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;'>
                   <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [480, 720, 960, 1200],                                       imageRatio: &quot;4:5&quot;,                                       sourceSizes: &quot;(min-width: 1180px) 30vw, (min-width: 760px) 44vw, 92vw&quot;                                    }' name='responsiveImage'/>
                 <b:else/>
-                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [32, 64, 128, 256],                                       imageRatio: &quot;1:1&quot;,                                       sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                    }' name='responsiveImage'/>
+                  <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;portfolio&quot;'>
+                    <a class='showcha-unrovr-thumb-link' expr:href='data:post.url'>
+                      <b:include data='{                                         image: data:post.featuredImage,                                         imageSizes: [420, 640, 820, 1040],                                         imageRatio: &quot;4:3&quot;,                                         sourceSizes: &quot;(min-width: 1000px) 36vw, (min-width: 680px) 48vw, 92vw&quot;                                      }' name='responsiveImage'/>
+                    </a>
+                  <b:else/>
+                    <b:include data='{                                         image: data:post.featuredImage,                                         imageSizes: [32, 64, 128, 256],                                         imageRatio: &quot;1:1&quot;,                                         sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                      }' name='responsiveImage'/>
+                  </b:if>
                 </b:if>
               </div>
             </b:if>
