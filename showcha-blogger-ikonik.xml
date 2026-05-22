@@ -15,7 +15,7 @@
     <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
     <link href='https://fonts.googleapis.com/css2?family=Anton&amp;display=swap' rel='stylesheet'/>
     <link href='https://ik.imagekit.io' rel='preconnect'/>
-    <link as='image' href='https://ik.imagekit.io/mygopen/showcha/cha-bg.jpg' rel='preload'/>
+    <link as='image' href='https://ik.imagekit.io/mygopen/showcha/main-bg.jpg' rel='preload'/>
 
     <b:skin version='1.3.3'><![CDATA[/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 /*
@@ -2696,9 +2696,632 @@ background:#fff;
 color:#050505;
 z-index:9999
 }
+body.illustration-portfolio-view{
+background:#050505;
+color:#fff;
+font-family:"LINE Seed TW",Roboto,Arial,sans-serif
+}
+body.illustration-portfolio-view .bg-photo-container,
+body.illustration-portfolio-view .bg-photo-overlay,
+body.illustration-portfolio-view .centered-top-container,
+body.illustration-portfolio-view .centered-top-placeholder,
+body.illustration-portfolio-view .sidebar-container,
+body.illustration-portfolio-view .post-filter-message,
+body.illustration-portfolio-view .post-share-buttons,
+body.illustration-portfolio-view .post-header,
+body.illustration-portfolio-view .post-footer,
+body.illustration-portfolio-view .post-bottom,
+body.illustration-portfolio-view .inline-ad{
+display:none
+}
+body.illustration-portfolio-view .page{
+background:#050505;
+min-height:100vh;
+min-height:100svh
+}
+body.illustration-portfolio-view .page_body{
+margin-left:0;
+position:relative
+}
+body.illustration-portfolio-view .page_body::before,
+body.illustration-portfolio-view .page_body::after{
+border-color:rgba(255,255,255,.82);
+border-style:solid;
+content:"";
+height:44px;
+pointer-events:none;
+position:fixed;
+top:22px;
+width:44px;
+z-index:50
+}
+body.illustration-portfolio-view .page_body::before{
+border-width:1px 0 0 1px;
+left:22px
+}
+body.illustration-portfolio-view .page_body::after{
+border-width:1px 1px 0 0;
+right:22px
+}
+body.illustration-portfolio-view .page_body .centered{
+max-width:none;
+min-height:100vh;
+min-height:100svh;
+padding:0
+}
+body.illustration-portfolio-view .centered-bottom{
+box-sizing:border-box;
+margin:0 auto;
+max-width:1440px;
+padding:clamp(34px,5vw,72px) clamp(22px,5.6vw,88px) clamp(56px,7vw,104px);
+width:100%
+}
+.showcha-portfolio-hero{
+align-items:flex-end;
+display:grid;
+gap:clamp(22px,4vw,56px);
+grid-template-columns:minmax(0,1fr) minmax(220px,360px);
+margin:0 0 clamp(34px,5vw,72px);
+position:relative
+}
+.showcha-portfolio-home{
+color:#d9b56f;
+display:inline-block;
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:18px;
+line-height:1;
+margin:0 0 28px;
+text-decoration:none;
+text-transform:uppercase;
+transition:color .2s ease,transform .22s cubic-bezier(.2,.72,.24,1)
+}
+.showcha-portfolio-home:hover,
+.showcha-portfolio-home:focus{
+color:#fff;
+outline:0;
+transform:translateX(8px)
+}
+.showcha-portfolio-kicker{
+color:#d9b56f;
+font-size:14px;
+font-weight:800;
+letter-spacing:0;
+line-height:1.5;
+margin:0 0 14px;
+text-transform:uppercase
+}
+.showcha-portfolio-hero h1{
+color:#fff;
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:clamp(56px,12vw,168px);
+font-weight:400;
+letter-spacing:0;
+line-height:.86;
+margin:0;
+text-transform:uppercase
+}
+.showcha-portfolio-summary{
+align-self:end;
+border-left:1px solid rgba(217,181,111,.62);
+color:rgba(255,255,255,.74);
+font-size:clamp(15px,1.7vw,18px);
+line-height:1.85;
+margin:0;
+padding:4px 0 4px 22px
+}
+body.illustration-portfolio-view .Blog{
+margin:0
+}
+body.illustration-portfolio-view .blog-posts{
+counter-reset:showchaPortfolio;
+display:grid;
+gap:clamp(18px,2.2vw,32px);
+grid-template-columns:repeat(3,minmax(0,1fr));
+margin:0;
+padding:0;
+width:100%
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container{
+animation:showchaPortfolioIn .75s cubic-bezier(.2,.72,.24,1) both;
+background:#101010;
+border:1px solid rgba(255,255,255,.13);
+box-sizing:border-box;
+counter-increment:showchaPortfolio;
+margin:0;
+min-height:420px;
+overflow:hidden;
+padding:0;
+position:relative;
+transition:border-color .22s ease,box-shadow .22s ease,transform .24s cubic-bezier(.2,.72,.24,1)
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container:nth-of-type(2){
+animation-delay:.08s
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container:nth-of-type(3){
+animation-delay:.16s
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container::before{
+color:rgba(255,255,255,.72);
+content:"0" counter(showchaPortfolio);
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:28px;
+left:22px;
+line-height:1;
+position:absolute;
+top:22px;
+z-index:5
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container::after{
+background:linear-gradient(180deg,rgba(0,0,0,0) 18%,rgba(0,0,0,.82) 100%);
+content:"";
+inset:0;
+opacity:.88;
+pointer-events:none;
+position:absolute;
+transition:opacity .22s ease;
+z-index:2
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container:hover,
+body.illustration-portfolio-view .blog-posts .post-outer-container:focus-within{
+border-color:rgba(217,181,111,.8);
+box-shadow:0 26px 70px rgba(0,0,0,.48);
+transform:translateY(-10px)
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container:hover::after,
+body.illustration-portfolio-view .blog-posts .post-outer-container:focus-within::after{
+opacity:.68
+}
+body.illustration-portfolio-view .blog-posts .post-outer{
+height:100%;
+padding:0;
+position:relative
+}
+body.illustration-portfolio-view .blog-posts .post{
+display:grid;
+height:100%;
+min-height:420px;
+position:relative
+}
+body.illustration-portfolio-view .post-title{
+align-items:flex-end;
+bottom:0;
+display:flex;
+float:none;
+left:0;
+line-height:1;
+margin:0;
+max-width:none;
+padding:0 22px 76px;
+pointer-events:none;
+position:absolute;
+right:0;
+top:0;
+z-index:6
+}
+body.illustration-portfolio-view .post-title a,
+body.illustration-portfolio-view .post-title a:hover,
+body.illustration-portfolio-view .post-title a:visited{
+align-items:flex-end;
+color:#fff;
+display:flex;
+font-family:"LINE Seed TW",Anton,Roboto,Arial,sans-serif;
+font-size:clamp(28px,3.4vw,52px);
+font-weight:800;
+height:100%;
+letter-spacing:0;
+line-height:1.05;
+pointer-events:auto;
+text-decoration:none;
+width:100%
+}
+body.illustration-portfolio-view .post-title a::before{
+content:"";
+display:none
+}
+body.illustration-portfolio-view .post-body{
+height:100%;
+margin:0;
+overflow:hidden;
+position:relative;
+z-index:1
+}
+body.illustration-portfolio-view .post-body .snippet-thumbnail{
+float:none;
+height:100%;
+margin:0;
+max-height:none;
+max-width:none;
+overflow:hidden;
+width:100%
+}
+body.illustration-portfolio-view .post-body .snippet-thumbnail img{
+display:block;
+height:100%;
+max-height:none;
+max-width:none;
+object-fit:cover;
+transform:scale(1.02);
+transition:filter .22s ease,transform .46s cubic-bezier(.2,.72,.24,1);
+width:100%
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container:hover .snippet-thumbnail img,
+body.illustration-portfolio-view .blog-posts .post-outer-container:focus-within .snippet-thumbnail img{
+filter:saturate(1.08) contrast(1.04);
+transform:scale(1.09)
+}
+body.illustration-portfolio-view .post-snippet{
+bottom:30px;
+color:rgba(255,255,255,.78);
+font-size:15px;
+left:22px;
+line-height:1.6;
+margin:0;
+max-height:3.4em;
+overflow:hidden;
+pointer-events:none;
+position:absolute;
+right:22px;
+z-index:7
+}
+body.illustration-portfolio-view .snippet-fade{
+display:none
+}
+body.illustration-portfolio-view .blog-pager{
+margin:clamp(34px,5vw,64px) 0 0
+}
+body.illustration-portfolio-view .blog-pager a{
+border:1px solid rgba(217,181,111,.7);
+color:#d9b56f;
+font-weight:800;
+padding:12px 18px;
+text-decoration:none;
+text-transform:uppercase
+}
+body.illustration-portfolio-view #footer{
+display:none
+}
+@keyframes showchaPortfolioIn{
+0%{
+opacity:0;
+transform:translateY(34px)
+}
+100%{
+opacity:1;
+transform:translateY(0)
+}
+}
+@media screen and (max-width:980px){
+.showcha-portfolio-hero{
+grid-template-columns:1fr
+}
+body.illustration-portfolio-view .blog-posts{
+grid-template-columns:repeat(2,minmax(0,1fr))
+}
+}
+@media screen and (max-width:640px){
+body.illustration-portfolio-view .page_body::before,
+body.illustration-portfolio-view .page_body::after{
+height:30px;
+top:14px;
+width:30px
+}
+body.illustration-portfolio-view .page_body::before{
+left:14px
+}
+body.illustration-portfolio-view .page_body::after{
+right:14px
+}
+body.illustration-portfolio-view .centered-bottom{
+padding:64px 18px 54px
+}
+.showcha-portfolio-home{
+margin-bottom:22px
+}
+.showcha-portfolio-summary{
+padding-left:16px
+}
+body.illustration-portfolio-view .blog-posts{
+grid-template-columns:1fr
+}
+body.illustration-portfolio-view .blog-posts .post-outer-container,
+body.illustration-portfolio-view .blog-posts .post{
+min-height:440px
+}
+body.illustration-portfolio-view .post-title{
+padding-bottom:82px
+}
+}
+body.showcha-project-view{
+background:#050505;
+color:#fff;
+font-family:"LINE Seed TW",Roboto,Arial,sans-serif
+}
+body.showcha-project-view .bg-photo-container,
+body.showcha-project-view .bg-photo-overlay,
+body.showcha-project-view .centered-top-container,
+body.showcha-project-view .centered-top-placeholder,
+body.showcha-project-view .sidebar-container,
+body.showcha-project-view .post-header,
+body.showcha-project-view .post-footer,
+body.showcha-project-view .post-bottom,
+body.showcha-project-view .post-share-buttons,
+body.showcha-project-view .inline-ad,
+body.showcha-project-view #comments,
+body.showcha-project-view .comments{
+display:none
+}
+body.showcha-project-view .page{
+background:#050505;
+min-height:100vh;
+min-height:100svh
+}
+body.showcha-project-view .page_body{
+margin-left:0;
+position:relative
+}
+body.showcha-project-view .page_body::before,
+body.showcha-project-view .page_body::after{
+border-color:rgba(255,255,255,.82);
+border-style:solid;
+content:"";
+height:44px;
+pointer-events:none;
+position:fixed;
+top:22px;
+width:44px;
+z-index:50
+}
+body.showcha-project-view .page_body::before{
+border-width:1px 0 0 1px;
+left:22px
+}
+body.showcha-project-view .page_body::after{
+border-width:1px 1px 0 0;
+right:22px
+}
+body.showcha-project-view .page_body .centered{
+max-width:none;
+min-height:100vh;
+min-height:100svh;
+padding:0
+}
+body.showcha-project-view .centered-bottom{
+box-sizing:border-box;
+margin:0 auto;
+max-width:1180px;
+padding:clamp(36px,5vw,76px) clamp(22px,5.6vw,88px) clamp(58px,7vw,112px);
+width:100%
+}
+body.showcha-project-view .Blog,
+body.showcha-project-view .blog-posts{
+margin:0;
+padding:0
+}
+body.showcha-project-view .post-outer-container{
+background:transparent;
+border:0;
+box-shadow:none;
+margin:0;
+padding:0
+}
+body.showcha-project-view .post-outer{
+padding:0
+}
+body.showcha-project-view .post{
+animation:showchaProjectRise .76s cubic-bezier(.2,.72,.24,1) both
+}
+.showcha-project-nav{
+align-items:center;
+display:flex;
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:18px;
+gap:18px;
+justify-content:space-between;
+line-height:1;
+margin:0 0 clamp(34px,5.5vw,80px);
+text-transform:uppercase
+}
+.showcha-project-nav a{
+color:rgba(255,255,255,.82);
+display:inline-flex;
+position:relative;
+text-decoration:none;
+transition:color .2s ease,transform .22s cubic-bezier(.2,.72,.24,1)
+}
+.showcha-project-nav a:hover,
+.showcha-project-nav a:focus{
+color:#d9b56f;
+outline:0;
+transform:translateY(-3px)
+}
+.showcha-project-nav a:first-child::before{
+content:"\00d7";
+font-family:Arial,sans-serif;
+font-size:32px;
+font-weight:400;
+line-height:16px;
+margin-right:10px
+}
+.showcha-project-kicker{
+color:#d9b56f;
+font-size:14px;
+font-weight:800;
+letter-spacing:0;
+line-height:1.5;
+margin:0 0 18px;
+text-transform:uppercase
+}
+body.showcha-project-view .post-title{
+color:#fff;
+float:none;
+font-family:"LINE Seed TW",Anton,Roboto,Arial,sans-serif;
+font-size:clamp(52px,10vw,132px);
+font-weight:800;
+letter-spacing:0;
+line-height:.95;
+margin:0;
+max-width:980px;
+text-transform:uppercase
+}
+body.showcha-project-view .post-title::after{
+background:#d9b56f;
+content:"";
+display:block;
+height:2px;
+margin:clamp(20px,3vw,34px) 0 0;
+width:72px
+}
+body.showcha-project-view .post-title a,
+body.showcha-project-view .post-title a:hover,
+body.showcha-project-view .post-title a:visited{
+color:#fff;
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+letter-spacing:0;
+line-height:inherit;
+text-decoration:none
+}
+.showcha-project-desc{
+align-items:start;
+border-bottom:1px solid rgba(255,255,255,.16);
+border-top:1px solid rgba(255,255,255,.16);
+display:grid;
+gap:clamp(22px,4vw,48px);
+grid-template-columns:minmax(0,1fr) minmax(250px,360px);
+margin:clamp(30px,4.2vw,56px) 0 0;
+padding:clamp(22px,3.4vw,40px) 0
+}
+.showcha-project-desc p{
+color:rgba(255,255,255,.84);
+font-size:clamp(18px,2.2vw,26px);
+font-weight:400;
+line-height:1.75;
+margin:0
+}
+.showcha-project-meta{
+display:grid;
+gap:16px
+}
+.showcha-project-meta span{
+color:rgba(255,255,255,.76);
+font-size:14px;
+line-height:1.55
+}
+.showcha-project-meta strong{
+color:#d9b56f;
+display:block;
+font-size:12px;
+font-weight:800;
+letter-spacing:0;
+line-height:1.2;
+margin:0 0 4px;
+text-transform:uppercase
+}
+.showcha-project-link{
+align-items:center;
+border:1px solid rgba(217,181,111,.72);
+color:#d9b56f;
+display:inline-flex;
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:16px;
+justify-content:center;
+line-height:1;
+margin-top:4px;
+min-height:46px;
+padding:0 18px;
+text-decoration:none;
+text-transform:uppercase;
+transition:background .2s ease,color .2s ease,transform .22s cubic-bezier(.2,.72,.24,1)
+}
+.showcha-project-link:hover,
+.showcha-project-link:focus{
+background:#d9b56f;
+color:#050505;
+outline:0;
+transform:translateY(-3px)
+}
+body.showcha-project-view .post-body{
+font-size:0;
+line-height:0;
+margin:clamp(34px,5vw,74px) 0 0;
+overflow:visible
+}
+body.showcha-project-view .post-body br{
+display:none
+}
+body.showcha-project-view .post-body .separator{
+clear:none !important;
+display:block;
+font-size:0;
+line-height:0;
+margin:0 !important;
+padding:0;
+text-align:left !important
+}
+body.showcha-project-view .post-body a[imageanchor]{
+display:block !important;
+margin:0 !important
+}
+body.showcha-project-view .post-body img{
+border:0 !important;
+box-shadow:0 30px 90px rgba(0,0,0,.46);
+display:block;
+height:auto !important;
+margin:0 auto !important;
+max-width:100% !important;
+width:100% !important
+}
+body.showcha-project-view #footer{
+display:none
+}
+@keyframes showchaProjectRise{
+0%{
+opacity:0;
+transform:translateY(34px)
+}
+100%{
+opacity:1;
+transform:translateY(0)
+}
+}
+@media screen and (max-width:720px){
+body.showcha-project-view .page_body::before,
+body.showcha-project-view .page_body::after{
+height:30px;
+top:14px;
+width:30px
+}
+body.showcha-project-view .page_body::before{
+left:14px
+}
+body.showcha-project-view .page_body::after{
+right:14px
+}
+body.showcha-project-view .centered-bottom{
+padding:64px 18px 56px
+}
+.showcha-project-nav{
+align-items:flex-start;
+flex-direction:column;
+font-size:17px;
+margin-bottom:44px
+}
+body.showcha-project-view .post-title{
+font-size:clamp(48px,16vw,76px)
+}
+.showcha-project-desc{
+grid-template-columns:1fr;
+margin-top:28px;
+padding:24px 0
+}
+.showcha-project-meta{
+gap:14px
+}
+}
 .showcha-home{
 align-items:center;
-background-image:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.42) 44%,rgba(0,0,0,.68) 100%),linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,.08) 42%,rgba(0,0,0,.76) 100%),url(https://ik.imagekit.io/mygopen/showcha/cha-bg.jpg);
+background-image:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.42) 44%,rgba(0,0,0,.68) 100%),linear-gradient(180deg,rgba(0,0,0,.32) 0%,rgba(0,0,0,.08) 42%,rgba(0,0,0,.76) 100%),url(https://ik.imagekit.io/mygopen/showcha/main-bg.jpg);
 background-position:center center;
 background-repeat:no-repeat;
 background-size:cover;
@@ -3139,7 +3762,11 @@ transition:none
 
             <b:if cond='data:post.featuredImage'>
               <div class='snippet-thumbnail'>
-                <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
+                <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;'>
+                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [480, 720, 960, 1200],                                       imageRatio: &quot;4:5&quot;,                                       sourceSizes: &quot;(min-width: 1180px) 30vw, (min-width: 760px) 44vw, 92vw&quot;                                    }' name='responsiveImage'/>
+                <b:else/>
+                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [32, 64, 128, 256],                                       imageRatio: &quot;1:1&quot;,                                       sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                    }' name='responsiveImage'/>
+                </b:if>
               </div>
             </b:if>
             <b:include cond='data:post' data='post' name='postSnippet'/>
@@ -3313,6 +3940,8 @@ transition:none
     <b:class cond='data:view.isHomepage' name='homepage-view'/>
     <b:class cond='data:view.isArchive' name='archive-view'/>
     <b:class cond='data:view.isLabelSearch' name='label-view'/>
+    <b:class cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;' name='illustration-portfolio-view'/>
+    <b:class cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;' name='showcha-project-view'/>
     <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
     <b:class name='version-1-3-3'/>
 
@@ -3573,6 +4202,16 @@ transition:none
                 </b:widget>
               </b:section>
               <main class='centered-bottom' id='main' role='main' tabindex='-1'>
+                <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;'>
+                  <section aria-labelledby='showcha-portfolio-title' class='showcha-portfolio-hero'>
+                    <div>
+                      <a class='showcha-portfolio-home' expr:href='data:blog.homepageUrl'>SHOWCHA</a>
+                      <p class='showcha-portfolio-kicker'>Portfolio / Label</p>
+                      <h1 id='showcha-portfolio-title'>Illustration</h1>
+                    </div>
+                    <p class='showcha-portfolio-summary'>創作、圖像與生活觀察的作品收藏。每張圖都是一個入口，往裡走就是完整的故事。</p>
+                  </section>
+                </b:if>
                 <b:if cond='data:view.isMultipleItems'>
                   <h2 class='main-heading'><data:messages.posts/></h2>
                 </b:if>
@@ -3933,8 +4572,26 @@ transition:none
         </b:includable>
                     <b:includable id='post' var='post'>
   <div class='post'>
+    <b:if cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;'>
+      <nav aria-label='Portfolio item navigation' class='showcha-project-nav'>
+        <a expr:href='data:blog.homepageUrl + &quot;search/label/Illustration&quot;'>Close</a>
+        <a expr:href='data:blog.homepageUrl + &quot;search/label/Illustration&quot;'>Back To Portfolio</a>
+      </nav>
+      <p class='showcha-project-kicker'>Portfolio / Illustration</p>
+    </b:if>
     <b:include data='post' name='postMeta'/>
     <b:include data='post' name='postTitle'/>
+    <b:if cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;'>
+      <div class='showcha-project-desc'>
+        <p>工作上你無法讓每個人都滿意，問心無愧就夠了</p>
+        <div aria-label='Project details' class='showcha-project-meta'>
+          <span><strong>Project</strong>SHOWCHA</span>
+          <span><strong>Year</strong>2026</span>
+          <span><strong>Services</strong>Illustration / Creative Notes</span>
+          <a class='showcha-project-link' expr:href='data:blog.homepageUrl + &quot;search/label/Illustration&quot;'>View Portfolio</a>
+        </div>
+      </div>
+    </b:if>
     <b:include name='headerByline'/>
     <b:if cond='data:view.isSingleItem'>
       <b:include data='post' name='postBody'/>
@@ -3956,7 +4613,11 @@ transition:none
 
             <b:if cond='data:post.featuredImage'>
               <div class='snippet-thumbnail'>
-                <b:include data='{                                     image: data:post.featuredImage,                                     imageSizes: [32, 64, 128, 256],                                     imageRatio: &quot;1:1&quot;,                                     sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                  }' name='responsiveImage'/>
+                <b:if cond='data:view.isLabelSearch and data:view.search.label == &quot;Illustration&quot;'>
+                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [480, 720, 960, 1200],                                       imageRatio: &quot;4:5&quot;,                                       sourceSizes: &quot;(min-width: 1180px) 30vw, (min-width: 760px) 44vw, 92vw&quot;                                    }' name='responsiveImage'/>
+                <b:else/>
+                  <b:include data='{                                       image: data:post.featuredImage,                                       imageSizes: [32, 64, 128, 256],                                       imageRatio: &quot;1:1&quot;,                                       sourceSizes: &quot;(max-width: 800px) 20vw, 128px&quot;                                    }' name='responsiveImage'/>
+                </b:if>
               </div>
             </b:if>
             <b:include cond='data:post' data='post' name='postSnippet'/>
@@ -3964,6 +4625,7 @@ transition:none
         </b:includable>
                     <b:includable id='postCommentsAndAd' var='post'>
   <article class='post-outer-container'>
+    <b:class cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;' name='showcha-project-post'/>
     <!-- Post title and body -->
     <div class='post-outer'>
       <b:include data='post' name='post'/>
