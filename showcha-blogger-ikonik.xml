@@ -2816,8 +2816,8 @@ margin:0
 body.illustration-portfolio-view .blog-posts{
 counter-reset:showchaPortfolio;
 display:grid;
-gap:clamp(18px,2.2vw,32px);
-grid-template-columns:repeat(3,minmax(0,1fr));
+gap:24px;
+grid-template-columns:repeat(3,1fr);
 margin:0;
 padding:0;
 width:100%
