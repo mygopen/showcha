@@ -20,8 +20,6 @@
 
     <b:skin version='1.3.3'><![CDATA[/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 /*
-<!-- Constants -->
-
 <Variable name="damionRegular36" description="Damion Regular 36" type="font" default="400 36px Damion, cursive" hideEditor="true"  value="400 36px Damion, cursive"/>
 <Variable name="damionRegular62" description="Damion Regular 62" type="font" default="400 62px Damion, cursive" hideEditor="true"  value="400 62px Damion, cursive"/>
 <Variable name="playfairDisplayBlack28" description="Playfair Display Black 28" type="font" default="900 28px Playfair Display, serif" hideEditor="true"  value="900 28px Playfair Display, serif"/>
@@ -33,8 +31,6 @@
 <Variable name="robotoBold22" description="Roboto Bold 22" type="font" default="bold 22px Roboto, sans-serif" hideEditor="true"  value="bold 22px Roboto, sans-serif"/>
 <Variable name="robotoBold30" description="Roboto Bold 30" type="font" default="bold 30px Roboto, sans-serif" hideEditor="true"  value="bold 30px Roboto, sans-serif"/>
 <Variable name="robotoBold45" description="Roboto Bold 45" type="font" default="bold 45px Roboto, sans-serif" hideEditor="true"  value="bold 45px Roboto, sans-serif"/>
-
-<!-- Variable definitions -->
 
 <Variable name="keycolor" description="Main Color" type="color" default="#2196f3"  value="#2196f3"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
@@ -2801,6 +2797,46 @@ line-height:.86;
 margin:0;
 text-transform:uppercase
 }
+.showcha-portfolio-filters{
+display:flex;
+flex-wrap:wrap;
+gap:16px 32px;
+list-style:none;
+margin:28px 0 0;
+padding:0
+}
+.showcha-portfolio-filters a{
+color:rgba(255,255,255,.6);
+font-family:Anton,"LINE Seed TW",Roboto,Arial,sans-serif;
+font-size:18px;
+letter-spacing:1px;
+text-decoration:none;
+text-transform:uppercase;
+transition:color .25s ease;
+position:relative
+}
+.showcha-portfolio-filters a:hover,
+.showcha-portfolio-filters a:focus{
+color:#d9b56f;
+outline:0
+}
+.showcha-portfolio-filters a::after{
+background:#d9b56f;
+bottom:-6px;
+content:"";
+height:2px;
+left:0;
+position:absolute;
+transform:scaleX(0);
+transform-origin:right center;
+transition:transform .3s cubic-bezier(.2,.72,.24,1);
+width:100%
+}
+.showcha-portfolio-filters a:hover::after,
+.showcha-portfolio-filters a:focus::after{
+transform:scaleX(1);
+transform-origin:left center
+}
 .showcha-portfolio-summary{
 align-self:end;
 border-left:1px solid rgba(217,181,111,.62);
@@ -3023,6 +3059,13 @@ padding:64px 18px 54px
 }
 .showcha-portfolio-home{
 margin-bottom:22px
+}
+.showcha-portfolio-filters{
+gap:12px 20px;
+margin:20px 0 0
+}
+.showcha-portfolio-filters a{
+font-size:16px
 }
 .showcha-portfolio-summary{
 padding-left:16px
@@ -4636,6 +4679,11 @@ transition:none
                       <a class='showcha-portfolio-home' expr:href='data:blog.homepageUrl'>SHOWCHA</a>
                       <p class='showcha-portfolio-kicker'>Portfolio / Label</p>
                       <h1 id='showcha-portfolio-title'><data:view.search.label/></h1>
+                      <ul class='showcha-portfolio-filters'>
+                        <li><a href='https://www.showcha.com/search/label/portfolio'>All</a></li>
+                        <li><a href='https://www.showcha.com/search/label/Illustration'>Illustration</a></li>
+                        <li><a href='https://www.showcha.com/search/label/video'>Video</a></li>
+                      </ul>
                     </div>
                     <p class='showcha-portfolio-summary'>
                       <b:if cond='data:view.search.label == &quot;portfolio&quot;'>把作品、文章與生活觀察收藏在這裡。每張圖都是一個入口，往裡走就是完整的故事。<b:else/>創作、圖像與生活觀察的作品收藏。每張圖都是一個入口，往裡走就是完整的故事。</b:if>
@@ -5029,8 +5077,7 @@ transition:none
         </b:includable>
                     <b:includable id='homePageLink'><b:comment>Don&#39;t show</b:comment></b:includable>
                     <b:includable id='iframeComments' var='post'>
-  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
-</b:includable>
+  </b:includable>
                     <b:includable id='inlineAd' var='post'>
           <div>
             <b:class cond='data:post.adNumber + data:numDesktopAds lt data:maxNumAds' name='desktop-ad'/>
@@ -5090,7 +5137,6 @@ transition:none
   </div>
 </b:includable>
                     <b:includable id='postBody' var='post'>
-  <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
   <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
     <data:post.body/>
   </div>
@@ -5119,19 +5165,15 @@ transition:none
                     <b:includable id='postCommentsAndAd' var='post'>
   <article class='post-outer-container'>
     <b:class cond='data:view.isPost and data:blog.postId == &quot;945241099883501566&quot;' name='showcha-project-post'/>
-    <!-- Post title and body -->
     <div class='post-outer'>
       <b:include data='post' name='post'/>
     </div>
 
-    <!-- Comments -->
     <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
 
-    <!-- Show ad inside post container, after comments, if single item. -->
     <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
   </article>
 
-  <!-- Show ad outside post container (between posts) for feed pages. -->
   <b:include cond='data:view.isMultipleItems and data:post.includeAd' data='post' name='inlineAd'/>
 </b:includable>
                     <b:includable id='postCommentsLink'>
@@ -5277,7 +5319,6 @@ transition:none
   </section>
 </b:includable>
                     <b:includable id='tooltipCss'>
-  <!-- LINT.IfChange -->
   <style>
     .post-body a.b-tooltip-container {
       position: relative;
@@ -5312,8 +5353,7 @@ transition:none
       }
     }
   </style>
-  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
-</b:includable>
+  </b:includable>
                   </b:widget>
                   <b:widget cond='data:view.isSingleItem and data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='' type='PopularPosts' visible='true'>
                     <b:widget-settings>
@@ -5504,159 +5544,3 @@ transition:none
 </b:includable>
             <b:includable id='userLocation'>
   <dd class='profile-data location'><data:location/></dd>
-</b:includable>
-            <b:includable id='userProfile'>
-  <b:include name='userProfileImage'/>
-  <b:include name='userProfileInfo'/>
-</b:includable>
-            <b:includable id='userProfileData'>
-  <dt class='profile-data'>
-    <a class='profile-link g-profile' expr:href='data:userUrl' rel='author nofollow'>
-      <data:displayname/>
-    </a>
-  </dt>
-</b:includable>
-            <b:includable id='userProfileImage'>
-  <a expr:href='data:userUrl' rel='nofollow'>
-    <b:include name='profileImage'/>
-  </a>
-</b:includable>
-            <b:includable id='userProfileInfo'>
-  <div class='profile-info'>
-    <dl class='profile-datablock'>
-      <b:class cond='data:showlocation and data:location != &quot;&quot;' name='has-location'/>
-
-      <b:include name='userProfileData'/>
-      <b:include cond='data:showlocation and data:location != &quot;&quot;' name='userLocation'/>
-      <b:include cond='data:aboutme != &quot;&quot;' name='userProfileText'/>
-    </dl>
-    <b:include name='viewProfileLink'/>
-  </div>
-</b:includable>
-            <b:includable id='userProfileText'>
-          <dd class='profile-textblock profile-snippet snippet-container r-snippet-container'>
-            <div class='snippet-item r-snippetized'>
-              <data:aboutme/>
-            </div>
-            <div class='snippet-fade r-snippet-fade hidden'/>
-          </dd>
-        </b:includable>
-            <b:includable id='viewProfileLink'>
-          <b:comment>Change link to &#39;visit profile&#39;</b:comment>
-          <a class='profile-link visit-profile pill-button' expr:href='data:userUrl' rel='author'>
-            <data:messages.visitProfile/>
-          </a>
-        </b:includable>
-          </b:widget>
-        </b:section>
-      </div>
-      <b:section class='sidebar_bottom' id='sidebar_bottom' name='Sidebar (Bottom)' preferred='yes'>
-        <b:widget id='BlogArchive1' locked='false' title='' type='BlogArchive' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
-            <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-            <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-            <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-            <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-            <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-            <b:widget-setting name='chronological'>false</b:widget-setting>
-            <b:widget-setting name='showPosts'>true</b:widget-setting>
-            <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main' var='this'>
-          <details class='collapsible extendable'>
-            <b:attr cond='data:view.isArchive' name='open' value='open'/>
-            <b:with value='true' var='renderAsDetails'>
-            <b:with value='data:messages.archive' var='defaultTitle'>
-              <b:include name='super.main'/>
-            </b:with>
-            </b:with>
-          </details>
-        </b:includable>
-          <b:includable id='content'>
-  <div class='widget-content'>
-    <div id='ArchiveList'>
-      <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-        <b:include cond='data:this.style == &quot;HIERARCHY&quot;' name='hierarchy'/>
-        <b:include cond='data:this.style in {&quot;FLAT&quot;, &quot;MENU&quot;}' name='flat'/>
-      </div>
-    </div>
-  </div>
-</b:includable>
-          <b:includable id='flat'>
-          <b:include data='{                               buttonClass: &quot;pill-button&quot;,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.flat&quot;                             }' name='extendableItems'/>
-        </b:includable>
-          <b:includable id='hierarchy'>
-          <b:include data='{                               buttonClass: &quot;pill-button&quot;,                               limit: 1,                               items: data:this.data,                               itemSet: &quot;data&quot;,                               itemsMarkup: &quot;super.hierarchy&quot;                             }' name='extendableItems'/>
-        </b:includable>
-          <b:includable id='interval' var='intervals'>
-  <ul class='hierarchy'>
-    <b:loop values='data:intervals' var='interval'>
-      <li class='archivedate'>
-        <div class='hierarchy-title'>
-          <a class='post-count-link' expr:href='data:interval.url'>
-            <data:interval.name/>
-            <span class='post-count'><data:interval.post-count/></span>
-          </a>
-        </div>
-        <div class='hierarchy-content'>
-          <b:include cond='data:interval.data' data='interval.data' name='interval'/>
-          <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
-        </div>
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-          <b:includable id='posts' var='posts'>
-  <ul class='posts hierarchy'>
-    <b:loop values='data:posts' var='post'>
-      <li>
-        <a expr:href='data:post.url'><data:post.title/></a>
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-        </b:widget>
-        <b:widget id='Label1' locked='false' title='標籤' type='Label' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-            <b:widget-setting name='display'>LIST</b:widget-setting>
-            <b:widget-setting name='selectedLabelsList'/>
-            <b:widget-setting name='showType'>ALL</b:widget-setting>
-            <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main' var='this'>
-          <details class='collapsible extendable'>
-            <b:attr cond='data:view.isLabelSearch' name='open' value='open'/>
-            <b:with value='true' var='renderAsDetails'>
-            <b:with value='data:messages.labels' var='defaultTitle'>
-              <b:include name='super.main'/>
-            </b:with>
-            </b:with>
-          </details>
-        </b:includable>
-          <b:includable id='cloud'>
-          <b:include data='{                               buttonClass: &quot;pill-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.cloud&quot;                             }' name='extendableItems'/>
-        </b:includable>
-          <b:includable id='content'>
-  <div class='widget-content'>
-    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
-    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
-    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
-  </div>
-</b:includable>
-          <b:includable id='list'>
-          <b:include data='{                               buttonClass: &quot;pill-button&quot;,                               items: data:this.labels,                               itemSet: &quot;labels&quot;,                               itemsMarkup: &quot;super.list&quot;                             }' name='extendableItems'/>
-        </b:includable>
-        </b:widget>
-        <b:widget id='ReportAbuse1' locked='true' title='' type='ReportAbuse' visible='true'>
-          <b:includable id='main'>
-  <b:include name='reportAbuse'/>
-</b:includable>
-        </b:widget>
-      </b:section>
-    </aside>
-
-    <b:template-script async='true' name='indie' version='1.0.0'/>
-  </body>
-</html>
