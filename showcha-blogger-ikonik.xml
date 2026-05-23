@@ -2814,6 +2814,7 @@ body.illustration-portfolio-view .Blog{
 margin:0
 }
 body.illustration-portfolio-view .blog-posts{
+align-items:stretch;
 counter-reset:showchaPortfolio;
 display:grid;
 gap:24px;
@@ -2878,7 +2879,7 @@ padding:0;
 position:relative
 }
 body.illustration-portfolio-view .blog-posts .post{
-display:grid;
+display:block;
 height:100%;
 min-height:420px;
 position:relative
@@ -2996,7 +2997,12 @@ transform:translateY(0)
 grid-template-columns:1fr
 }
 body.illustration-portfolio-view .blog-posts{
-grid-template-columns:repeat(2,minmax(0,1fr))
+grid-template-columns:repeat(2,1fr)
+}
+}
+@media screen and (max-width:768px){
+body.illustration-portfolio-view .blog-posts{
+grid-template-columns:1fr
 }
 }
 @media screen and (max-width:640px){
